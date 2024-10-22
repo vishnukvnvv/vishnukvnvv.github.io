@@ -1,0 +1,74 @@
+.sam2-image {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    height: 80%;
+    padding: 5px;
+}
+
+.sam2-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#sam2-user-input {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.sam2-img {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.input {
+    width: 60%;
+    border-radius: 0;
+    padding: 0;
+}
+
+#sam2-output {
+    display: flex;
+    width: 100%;
+}
+
+.segments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sam-title {
+    width: 100%;
+}
+
+.output {
+    width: 95%;
+}
+
+#sam-coordinates {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sam-btn {
+    margin-bottom: 10px;
+}

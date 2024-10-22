@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM2 Image Segmentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sam2-image">
+        <div class="sam2-input">
+            <div id="sam2-user-input">
+                <label for="sam2-input-url">Enter Image URL</label>
+                <input type="text" name="Input Image" id="sam2-input-url">
+                <span id="sam-coordinates">
+                    <p>
+                        <label for="X coordinate">X : </label>
+                        <input type="number" name="X coordinate" id="x" class="sam-pointer">
+                    </p>
+                    <p>
+                        <label for="Y coordinate">Y : </label>
+                        <input type="number" name="Y coordinate" id="y" class="sam-pointer">
+                    </p>
+                </span>
+                <button type="submit" id="sam-btn">Segment</button>
+                <img alt="input image" class="sam2-img input" id="input-view">
+            </div>
+        </div>
+        <div id="sam2-output">
+            <p class="segments">
+                <label for="segment-1" class="sam-title">Segment 1</label>
+                <img src="" alt="output image" id="segment-1" class="sam2-img output">
+            </p>
+            <p class="segments">
+                <label for="segment-2" class="sam-title">Segment 2</label>
+                <img src="" alt="output image" id="segment-2" class="sam2-img output">
+            </p>
+            <p class="segments">
+                <label for="segment-3" class="sam-title">Segment 3</label>
+                <img src="" alt="output image" id="segment-3" class="sam2-img output">
+            </p>
+        </div>
+    </div>
+    <script src="segment.js"></script>
+    <script src="coordinates.js"></script>
+</body>
+
+</html>
