@@ -4,6 +4,7 @@ let x = document.getElementById("x")
 let y = document.getElementById("y")
 let output = document.getElementById("sam2-output")
 let inputDisplay = document.getElementById("input-view")
+let info = document.getElementById("info")
 let baseUrl = "https://f2a1-180-151-45-106.ngrok-free.app"
 
 let segment1 = document.getElementById("segment-1")
@@ -15,6 +16,7 @@ input.onblur = showImage
 submit.addEventListener("click", initSegment)
 
 hideOutputs()
+info.style.display = "none"
 
 async function showImage(event) {
     hideOutputs()
@@ -33,6 +35,7 @@ async function initSegment(event) {
 
 async function segmentImage() {
     hideOutputs()
+    info.style.display = "block"
     let currentUrl = localStorage.getItem("baseUrl")
     let segmentUrl = (currentUrl) ? currentUrl : baseUrl
     let url = `${segmentUrl}/segment`
@@ -57,6 +60,7 @@ async function segmentImage() {
     });
 
     populateElements(await response.json())
+    info.style.display = "none"
 }
 
 function populateElements(resp) {
